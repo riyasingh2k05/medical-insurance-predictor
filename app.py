@@ -28,7 +28,7 @@ if st.button("Calculate Predicted Cost"):
     smoker_val = 1 if smoker == "yes" else 0
     
     # Put inputs in an array (Matches: age, bmi, children, smoker)
-    input_data = np.array([[age, bmi, children, smoker_val]])
+    input_data = np.array([[age, bmi, children, smoker_val,0,0,0,0,0]])
     
     try:
         prediction = model.predict(input_data)
